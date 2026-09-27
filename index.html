@@ -1,12 +1,131 @@
-<!DOCTYPE html>
-<html>
-    <body style = "background-color: #33ECFF;">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mojolaoluwa (David) Babafemi · Data Analyst</title>
+  <meta name="description" content="Data analyst portfolio: SQL, Python and Tableau projects by Mojolaoluwa (David) Babafemi, Syracuse University IT & Management, 2026.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="nav-name" href="#top">David Babafemi</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        <h1 style = "font-size: 45px;">Mojolaoluwa Babafemi</h1>
-<p><img src="me.jpg" width = "300" height = "400"></p>
-        <p>I am from Baltimore, Maryland and i am 18 years old
-<br> I like to play basketball and soccer for fun
-<br> I am very intrested in computers and technology</p>
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Data analyst · SQL · Python · Tableau</p>
+      <h1>Mojolaoluwa (David) Babafemi</h1>
+      <p class="lead">I turn messy data into reporting people can trust: cleaning and validating it with SQL and Python, then putting it in front of decision-makers as clear dashboards.</p>
+      <p class="meta">B.S. Information Technology &amp; Management, Syracuse University, 2026 · Applied Data Analytics concentration · Maryland</p>
+      <div class="actions">
+        <a class="button primary" href="#projects">See my projects</a>
+        <a class="button" href="https://www.linkedin.com/in/david-babafemi" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button" href="https://github.com/mojoboy" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
 
-    </body>
-    </html>
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project featured">
+        <a class="shot" href="https://mojoboy-job-tracker.streamlit.app" target="_blank" rel="noopener">
+          <img src="assets/job-tracker-dashboard.png" alt="Job Search Tracker dashboard: response rate, a funnel of how far applications get, applications per week, and response rates by resume version and by channel" loading="lazy">
+        </a>
+        <div class="project-body">
+          <h3>Job Search Tracker</h3>
+          <p>A web app for tracking job applications without spreadsheets or SQL. Paste a job link and the company, role, location, pay and description fill themselves in, from the job data many career sites publish. Record replies as they come in, and the dashboard shows which resume versions and channels actually get responses.</p>
+          <ul class="points">
+            <li>Reads links from Greenhouse, LinkedIn, Workday, Lever, Ashby, iCIMS and Oracle career sites; Claude fills in anything missing</li>
+            <li>MySQL database with a status history per application, so the funnel and response rates come straight from the data</li>
+            <li>Built for any field: users name their own resume versions, channels and hiring stages</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>Streamlit</li><li>MySQL</li><li>pandas</li><li>Altair</li><li>Claude API</li></ul>
+          <div class="actions">
+            <a class="button primary" href="https://mojoboy-job-tracker.streamlit.app" target="_blank" rel="noopener">Try the live demo</a>
+            <a class="button" href="https://github.com/mojoboy/job-search-tracker" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="code-card" aria-label="Excerpt from the analysis: ranking the top five companies by layoffs each year">
+<pre><code><span class="k">WITH</span> company_year <span class="k">AS</span> (
+  <span class="k">SELECT</span> company, <span class="f">YEAR</span>(`date`) <span class="k">AS</span> years,
+         <span class="f">SUM</span>(total_laid_off) <span class="k">AS</span> total_laid_off
+  <span class="k">FROM</span> layoffs_staging2
+  <span class="k">GROUP BY</span> company, <span class="f">YEAR</span>(`date`)
+)
+<span class="k">SELECT</span> *, <span class="f">DENSE_RANK</span>() <span class="k">OVER</span> (
+         <span class="k">PARTITION BY</span> years
+         <span class="k">ORDER BY</span> total_laid_off <span class="k">DESC</span>) <span class="k">AS</span> ranking
+<span class="k">FROM</span> company_year;</code></pre>
+        </div>
+        <div class="project-body">
+          <h3>Tech Layoffs: SQL Data Cleaning &amp; Analysis</h3>
+          <p>Cleaned and analyzed 2,361 layoff records from March 2020 to March 2023 (1,893 companies in 60 countries) in MySQL.</p>
+          <ul class="points">
+            <li>Removed duplicates with <code>ROW_NUMBER()</code> over every column, working in staging tables so the raw data stayed untouched</li>
+            <li>Standardized company, industry and country values, converted text dates to real dates, and filled missing industries with a self-join</li>
+            <li>Rolling monthly totals and the top five companies by layoffs each year with window functions</li>
+          </ul>
+          <ul class="tags"><li>MySQL</li><li>CTEs</li><li>Window functions</li><li>Data cleaning</li></ul>
+          <div class="actions">
+            <a class="button" href="https://github.com/mojoboy/layoffs-sql-data-cleaning" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="role">
+        <div class="role-head">
+          <h3>Investments &amp; Data Analysis Intern · Excel Group</h3>
+          <p class="when">Arlington, VA · Summer 2025</p>
+        </div>
+        <ul class="points">
+          <li>Built and maintained Python- and SQL-based reporting tools for financial and operational decisions</li>
+          <li>Aggregated, cleaned and validated data from internal and external sources</li>
+          <li>Delivered dashboards that leadership used for planning and resource allocation</li>
+        </ul>
+      </div>
+      <div class="role">
+        <div class="role-head">
+          <h3>B.S. Information Technology &amp; Management · Syracuse University</h3>
+          <p class="when">School of Information Studies · May 2026</p>
+        </div>
+        <p class="muted">Concentrations in Applied Data Analytics, Information Security and Project Management. Dean's Scholar.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="tags large">
+        <li>SQL (CTEs, window functions)</li><li>Python</li><li>pandas</li><li>R</li><li>Tableau</li><li>Excel</li>
+        <li>Data cleaning &amp; validation</li><li>Dashboards &amp; KPI reporting</li><li>Git &amp; GitHub</li><li>MySQL</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's talk</h2>
+      <p>I'm looking for entry-level data analyst roles, remote or in the DC, Maryland and Virginia area.</p>
+      <div class="actions">
+        <a class="button primary" href="https://www.linkedin.com/in/david-babafemi" target="_blank" rel="noopener">Message me on LinkedIn</a>
+        <a class="button" href="https://github.com/mojoboy" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Mojolaoluwa Babafemi</footer>
+</body>
+</html>
