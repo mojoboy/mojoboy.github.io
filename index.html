@@ -1,65 +1,256 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mojolaoluwa (David) Babafemi · Data Analyst</title>
-  <meta name="description" content="Data analyst portfolio: SQL, Python and Tableau projects by Mojolaoluwa (David) Babafemi, Syracuse University IT & Management, 2026.">
+  <title>David Babafemi · Data Analyst</title>
+  <meta name="description" content="Mojolaoluwa (David) Babafemi, data analyst. SQL, Python and Tableau work, including a live job-search analytics app and a MySQL analysis of 383,659 tech layoffs. Syracuse University, 2026.">
+  <meta name="theme-color" content="#0B0B10">
+  <link rel="canonical" href="https://mojoboy.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mojoboy.github.io/">
+  <meta property="og:title" content="David Babafemi · Data Analyst">
+  <meta property="og:description" content="I turn messy data into clear decisions. SQL, Python and Tableau projects, including a live job-search analytics app.">
+  <meta property="og:image" content="https://mojoboy.github.io/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="David Babafemi, Data Analyst: I turn messy data into clear decisions.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      var root = document.documentElement, seen = false;
+      root.classList.replace('no-js', 'js');
+      try { seen = sessionStorage.getItem('intro-seen') === '1'; } catch (e) {}
+      if (seen || window.matchMedia('(prefers-reduced-motion: reduce)').matches) root.classList.add('no-intro');
+    })();
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mojolaoluwa Babafemi",
+      "alternateName": "David Babafemi",
+      "jobTitle": "Data Analyst",
+      "url": "https://mojoboy.github.io/",
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Syracuse University" },
+      "sameAs": ["https://www.linkedin.com/in/david-babafemi", "https://github.com/mojoboy"]
+    }
+  </script>
 </head>
 <body>
-  <header class="nav">
-    <a class="nav-name" href="#top">David Babafemi</a>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+  <a class="skip" href="#work">Skip to my work</a>
+
+  <!-- intro curtain: a one-second count-up, shown once per visit -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="brand-mark loader-mark">DB</span>
+      <span class="loader-name">David Babafemi<small>Data analyst</small></span>
+      <span class="loader-count"><span data-loader-count>00</span></span>
+    </div>
+  </div>
+
+  <div class="progress" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="cursor-label" aria-hidden="true"><span>View</span></div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Open to entry-level data analyst roles</span><span class="star">✦</span>
+      <span>Remote or DC · MD · VA</span><span class="star">✦</span>
+      <span>SQL · Python · Tableau</span><span class="star">✦</span>
+      <span>Syracuse University, Class of 2026</span><span class="star">✦</span>
+      <span>Live demo: Job Search Tracker</span><span class="star">✦</span>
+      <span>Open to entry-level data analyst roles</span><span class="star">✦</span>
+      <span>Remote or DC · MD · VA</span><span class="star">✦</span>
+      <span>SQL · Python · Tableau</span><span class="star">✦</span>
+      <span>Syracuse University, Class of 2026</span><span class="star">✦</span>
+      <span>Live demo: Job Search Tracker</span><span class="star">✦</span>
+    </div>
+  </div>
+
+  <header class="nav" data-nav>
+    <a class="brand" href="#top" aria-label="David Babafemi, back to the top">
+      <span class="brand-mark">DB</span>
+      <span class="brand-name">David Babafemi</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#work" aria-label="Work"><span class="roll"><span data-text="Work">Work</span></span></a>
+      <a href="#experience" aria-label="Experience"><span class="roll"><span data-text="Experience">Experience</span></span></a>
+      <a href="#skills" aria-label="Toolkit"><span class="roll"><span data-text="Toolkit">Toolkit</span></span></a>
+      <a href="#contact" aria-label="Contact"><span class="roll"><span data-text="Contact">Contact</span></span></a>
     </nav>
+    <a class="pill pill-sm pill-primary" href="#contact" aria-label="Let's talk">
+      <span class="roll"><span data-text="Let's talk">Let's talk</span></span>
+      <svg class="arrow" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <p class="eyebrow">Data analyst · SQL · Python · Tableau</p>
-      <h1>Mojolaoluwa (David) Babafemi</h1>
-      <p class="lead">I turn messy data into reporting people can trust: cleaning and validating it with SQL and Python, then putting it in front of decision-makers as clear dashboards.</p>
-      <p class="meta">B.S. Information Technology &amp; Management, Syracuse University, 2026 · Applied Data Analytics concentration · Maryland</p>
-      <div class="actions">
-        <a class="button primary" href="#projects">See my projects</a>
-        <a class="button" href="https://www.linkedin.com/in/david-babafemi" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="button" href="https://github.com/mojoboy" target="_blank" rel="noopener">GitHub</a>
+    <!-- ================================================================ hero -->
+    <section class="hero" id="intro">
+      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="grid-bg" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="status reveal"><span class="dot"></span>Available for work · Syracuse '26</p>
+
+        <h1 class="hero-title">
+          <span class="sr-only">I turn messy data into clear decisions.</span>
+          <span class="line" aria-hidden="true">
+            <span class="w"><span style="--i:0">I</span></span>
+            <span class="w"><span style="--i:1">turn</span></span>
+            <span class="messy" title="Point here to clean it up">
+              <span class="w w-messy"><span style="--i:2"><i style="--r:-8deg;--y:.06em">m</i><i style="--r:5deg;--y:-.05em">e</i><i style="--r:-3deg;--y:.03em">s</i><i style="--r:9deg;--y:-.03em">s</i><i style="--r:-5deg;--y:.05em">y</i></span></span>
+              <span class="w w-messy"><span style="--i:3"><i style="--r:6deg;--y:-.04em">d</i><i style="--r:-7deg;--y:.05em">a</i><i style="--r:4deg;--y:-.06em">t</i><i style="--r:-4deg;--y:.02em">a</i></span></span>
+            </span>
+          </span>
+          <span class="line" aria-hidden="true">
+            <span class="w"><span style="--i:4">into</span></span>
+            <span class="hl">
+              <span class="w w-it"><em style="--i:5">clear</em></span>
+              <span class="w w-it"><em style="--i:6">decisions</em></span>
+              <svg class="squiggle" viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 15 C 45 5, 75 22, 115 12 S 185 4, 225 13 S 282 20, 297 7"/></svg>
+            </span><span class="w"><span style="--i:7">.</span></span>
+          </span>
+        </h1>
+
+        <p class="hero-lead reveal" style="--d:150ms">
+          Hi, I'm <strong>Mojolaoluwa (David) Babafemi</strong>, a data analyst and 2026 Syracuse University graduate.
+          I clean and check data with SQL and Python, then build the dashboards people use to decide what to do next.
+        </p>
+
+        <div class="hero-actions reveal" style="--d:250ms">
+          <a class="pill pill-primary magnetic" href="#work" aria-label="See my work">
+            <span class="roll"><span data-text="See my work">See my work</span></span>
+            <svg class="arrow arrow-down" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="pill" href="https://www.linkedin.com/in/david-babafemi" target="_blank" rel="noopener" aria-label="LinkedIn (opens in a new tab)">
+            <span class="roll"><span data-text="LinkedIn">LinkedIn</span></span>
+            <svg class="arrow" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="pill" href="https://github.com/mojoboy" target="_blank" rel="noopener" aria-label="GitHub (opens in a new tab)">
+            <span class="roll"><span data-text="GitHub">GitHub</span></span>
+            <svg class="arrow" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <dl class="stats" data-stagger>
+        <div class="reveal"><dt>raw layoff records cleaned</dt><dd data-count="2361">2,361</dd></div>
+        <div class="reveal"><dt>layoffs analyzed in SQL</dt><dd data-count="383659">383,659</dd></div>
+        <div class="reveal"><dt>career sites my tracker reads</dt><dd data-count="7">7</dd></div>
+        <div class="reveal"><dt>automated tests behind it</dt><dd data-count="46">46</dd></div>
+      </dl>
+    </section>
+
+    <!-- ================================================================ tools band -->
+    <section class="band" aria-label="Tools I use: SQL, Python, Tableau, pandas, MySQL, Streamlit, Excel and R">
+      <div class="band-track" data-marquee data-speed="55" aria-hidden="true">
+        <span>SQL</span><i>✦</i>
+        <span class="outline">Python</span><i>✦</i>
+        <span class="serif">Tableau</span><i>✦</i>
+        <span>pandas</span><i>✦</i>
+        <span class="outline">MySQL</span><i>✦</i>
+        <span class="serif">Streamlit</span><i>✦</i>
+        <span>Excel</span><i>✦</i>
+        <span class="outline">R</span><i>✦</i>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <!-- ================================================================ work -->
+    <section class="section" id="work">
+      <header class="section-head">
+        <p class="kicker reveal"><span>(01)</span>Selected work</p>
+        <h2 class="section-title reveal" style="--d:80ms">Things I've <em>built</em>.</h2>
+      </header>
 
-      <article class="project featured">
-        <a class="shot" href="https://mojoboy-job-tracker.streamlit.app" target="_blank" rel="noopener">
-          <img src="assets/job-tracker-dashboard.png" alt="Job Search Tracker dashboard: response rate, a funnel of how far applications get, applications per week, and response rates by resume version and by channel" loading="lazy">
-        </a>
-        <div class="project-body">
-          <h3>Job Search Tracker</h3>
-          <p>A web app for tracking job applications without spreadsheets or SQL. Paste a job link and the company, role, location, pay and description fill themselves in, from the job data many career sites publish. Record replies as they come in, and the dashboard shows which resume versions and channels actually get responses.</p>
-          <ul class="points">
-            <li>Reads links from Greenhouse, LinkedIn, Workday, Lever, Ashby, iCIMS and Oracle career sites; Claude fills in anything missing</li>
-            <li>MySQL database with a status history per application, so the funnel and response rates come straight from the data</li>
-            <li>Built for any field: users name their own resume versions, channels and hiring stages</li>
+      <article class="project">
+        <div class="project-media reveal" data-tilt>
+          <a class="browser" href="https://mojoboy-job-tracker.streamlit.app" target="_blank" rel="noopener" data-cursor="Open the demo ↗" aria-label="Open the Job Search Tracker live demo (opens in a new tab)">
+            <span class="browser-bar"><i></i><i></i><i></i><span>mojoboy-job-tracker.streamlit.app</span></span>
+            <img src="assets/tracker-dashboard.webp" width="1600" height="981" alt="The Job Search Tracker dashboard: 24 applications, a 46% response rate, a funnel of how far applications get, and applications per week, shown with sample data">
+          </a>
+          <img class="project-float" data-parallax="0.12" src="assets/tracker-pipeline.webp" width="1600" height="1026" loading="lazy" alt="">
+        </div>
+        <div class="project-copy">
+          <p class="project-index reveal"><span>01</span>Web app · Python · MySQL</p>
+          <h3 class="reveal" style="--d:60ms">Job Search Tracker</h3>
+          <p class="project-pitch reveal" style="--d:120ms">Paste a job link and the company, role, pay and description fill themselves in. Track every reply on a board, and the dashboard shows which resumes and channels actually get responses. Built for anyone's search, in any field.</p>
+          <ul class="points reveal" style="--d:180ms">
+            <li>Reads Greenhouse, LinkedIn, Workday, Lever, Ashby, iCIMS and Oracle job pages; Claude fills in anything missing</li>
+            <li>MySQL keeps a status history for every application, so the funnel and response rates come straight from the data</li>
+            <li>Streamlit app with a pipeline board, dashboard and CSV import, backed by 46 automated tests</li>
           </ul>
-          <ul class="tags"><li>Python</li><li>Streamlit</li><li>MySQL</li><li>pandas</li><li>Altair</li><li>Claude API</li></ul>
-          <div class="actions">
-            <a class="button primary" href="https://mojoboy-job-tracker.streamlit.app" target="_blank" rel="noopener">Try the live demo</a>
-            <a class="button" href="https://github.com/mojoboy/job-search-tracker" target="_blank" rel="noopener">Code</a>
+          <ul class="tags reveal" style="--d:220ms"><li>Python</li><li>Streamlit</li><li>MySQL</li><li>pandas</li><li>Altair</li><li>Claude API</li></ul>
+          <div class="actions reveal" style="--d:260ms">
+            <a class="pill pill-primary magnetic" href="https://mojoboy-job-tracker.streamlit.app" target="_blank" rel="noopener" aria-label="Try the live demo (opens in a new tab)">
+              <span class="roll"><span data-text="Try the live demo">Try the live demo</span></span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="pill" href="https://github.com/mojoboy/job-search-tracker" target="_blank" rel="noopener" aria-label="Code on GitHub (opens in a new tab)">
+              <span class="roll"><span data-text="Code">Code</span></span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
           </div>
+          <p class="fineprint reveal" style="--d:300ms">The demo runs on made-up sample data; the companies in it are fictional.</p>
         </div>
       </article>
 
-      <article class="project">
-        <div class="code-card" aria-label="Excerpt from the analysis: ranking the top five companies by layoffs each year">
-<pre><code><span class="k">WITH</span> company_year <span class="k">AS</span> (
+      <article class="project project-flip">
+        <div class="project-copy">
+          <p class="project-index reveal"><span>02</span>SQL analysis · MySQL</p>
+          <h3 class="reveal" style="--d:60ms">Tech Layoffs, <span class="nowrap">2020–2023</span></h3>
+          <p class="project-pitch reveal" style="--d:120ms">I cleaned 2,361 raw layoff records in MySQL, then asked who was hit, when, and how hard. 2022 was the peak, and 2023 reached 78% of 2022's total by early March.</p>
+          <ul class="points reveal" style="--d:180ms">
+            <li>Removed duplicates with <code>ROW_NUMBER()</code> in staging tables, so the raw data never changed</li>
+            <li>Standardized company, industry and country names, turned text into real dates, and filled missing industries with a self-join</li>
+            <li>Rolling monthly totals and each year's top five companies with window functions</li>
+          </ul>
+          <ul class="tags reveal" style="--d:220ms"><li>MySQL</li><li>CTEs</li><li>Window functions</li><li>Data cleaning</li></ul>
+          <div class="actions reveal" style="--d:260ms">
+            <a class="pill" href="https://github.com/mojoboy/layoffs-sql-data-cleaning" target="_blank" rel="noopener" aria-label="Code on GitHub (opens in a new tab)">
+              <span class="roll"><span data-text="Code">Code</span></span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-media">
+          <figure class="chart-card spot reveal" data-chart>
+            <figcaption class="chart-head">
+              <span class="chart-title">Tech layoffs per year</span>
+              <span class="chart-sub">people laid off</span>
+            </figcaption>
+            <div class="chart" aria-hidden="true">
+              <div class="bars">
+                <div class="bar" style="--v:.504;--i:0"><span class="bar-value">80,998</span><span class="bar-fill"></span></div>
+                <div class="bar" style="--v:.098;--i:1"><span class="bar-value">15,823</span><span class="bar-fill"></span></div>
+                <div class="bar bar-peak" style="--v:1;--i:2"><span class="bar-value">160,661</span><span class="bar-fill"></span></div>
+                <div class="bar bar-partial" style="--v:.782;--i:3"><span class="bar-value">125,677</span><span class="bar-fill"></span></div>
+              </div>
+              <div class="bar-labels"><span>2020</span><span>2021</span><span>2022</span><span>2023*</span></div>
+            </div>
+            <table class="sr-only">
+              <caption>Tech layoffs per year</caption>
+              <thead><tr><th scope="col">Year</th><th scope="col">People laid off</th></tr></thead>
+              <tbody>
+                <tr><td>2020 (from March 11)</td><td>80,998</td></tr>
+                <tr><td>2021</td><td>15,823</td></tr>
+                <tr><td>2022</td><td>160,661</td></tr>
+                <tr><td>2023 (through March 6)</td><td>125,677</td></tr>
+              </tbody>
+            </table>
+            <p class="chart-note">*2023 covers January 1 to March 6 only, drawn striped. Source: layoffs.fyi data on Kaggle, cleaned in MySQL.</p>
+          </figure>
+
+          <div class="code-card spot reveal" style="--d:120ms">
+<pre><code><span class="c">-- each year's top five companies by layoffs</span>
+<span class="k">WITH</span> company_year <span class="k">AS</span> (
   <span class="k">SELECT</span> company, <span class="f">YEAR</span>(`date`) <span class="k">AS</span> years,
          <span class="f">SUM</span>(total_laid_off) <span class="k">AS</span> total_laid_off
   <span class="k">FROM</span> layoffs_staging2
@@ -69,63 +260,121 @@
          <span class="k">PARTITION BY</span> years
          <span class="k">ORDER BY</span> total_laid_off <span class="k">DESC</span>) <span class="k">AS</span> ranking
 <span class="k">FROM</span> company_year;</code></pre>
-        </div>
-        <div class="project-body">
-          <h3>Tech Layoffs: SQL Data Cleaning &amp; Analysis</h3>
-          <p>Cleaned and analyzed 2,361 layoff records from March 2020 to March 2023 (1,893 companies in 60 countries) in MySQL.</p>
-          <ul class="points">
-            <li>Removed duplicates with <code>ROW_NUMBER()</code> over every column, working in staging tables so the raw data stayed untouched</li>
-            <li>Standardized company, industry and country values, converted text dates to real dates, and filled missing industries with a self-join</li>
-            <li>Rolling monthly totals and the top five companies by layoffs each year with window functions</li>
-          </ul>
-          <ul class="tags"><li>MySQL</li><li>CTEs</li><li>Window functions</li><li>Data cleaning</li></ul>
-          <div class="actions">
-            <a class="button" href="https://github.com/mojoboy/layoffs-sql-data-cleaning" target="_blank" rel="noopener">Code</a>
           </div>
         </div>
       </article>
+
+      <a class="more reveal" href="https://github.com/mojoboy" target="_blank" rel="noopener">
+        <span>More on GitHub</span>
+        <svg class="arrow" width="22" height="22" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="role">
-        <div class="role-head">
-          <h3>Investments &amp; Data Analysis Intern · Excel Group</h3>
-          <p class="when">Arlington, VA · Summer 2025</p>
-        </div>
-        <ul class="points">
-          <li>Built and maintained Python- and SQL-based reporting tools for financial and operational decisions</li>
-          <li>Aggregated, cleaned and validated data from internal and external sources</li>
-          <li>Delivered dashboards that leadership used for planning and resource allocation</li>
-        </ul>
+    <!-- ================================================================ experience -->
+    <section class="section" id="experience">
+      <header class="section-head">
+        <p class="kicker reveal"><span>(02)</span>Experience</p>
+        <h2 class="section-title reveal" style="--d:80ms">Where I've <em>learned</em>.</h2>
+      </header>
+
+      <ol class="timeline" data-timeline>
+        <li class="tl-item reveal">
+          <p class="tl-when">Summer 2025</p>
+          <div class="tl-body">
+            <h3>Investments &amp; Data Analysis Intern</h3>
+            <p class="tl-org">Excel Group · Arlington, VA</p>
+            <ul class="points">
+              <li>Built and maintained Python- and SQL-based reporting tools for financial and operational decisions</li>
+              <li>Aggregated, cleaned and validated data from internal and external sources</li>
+              <li>Delivered dashboards that leadership used for planning and resource allocation</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <p class="tl-when">May 2026</p>
+          <div class="tl-body">
+            <h3>B.S. Information Technology &amp; Management</h3>
+            <p class="tl-org">Syracuse University · School of Information Studies</p>
+            <p class="tl-text">Concentrations in Applied Data Analytics, Information Security and Project Management. Dean's Scholar.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================================================================ toolkit -->
+    <section class="section" id="skills">
+      <header class="section-head">
+        <p class="kicker reveal"><span>(03)</span>Toolkit</p>
+        <h2 class="section-title reveal" style="--d:80ms">What I <em>work with</em>.</h2>
+      </header>
+
+      <div class="bento" data-stagger>
+        <article class="bento-card spot reveal">
+          <span class="bento-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7.5" ry="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4.5 6v6c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3V6M4.5 12v6c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3v-6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <pre class="bento-deco" aria-hidden="true">SUM(total_laid_off) OVER (ORDER BY month)</pre>
+          <h3>Query</h3>
+          <p>Clean, join and reshape data where it lives.</p>
+          <ul class="tags"><li>SQL</li><li>MySQL</li><li>CTEs</li><li>Window functions</li></ul>
+        </article>
+        <article class="bento-card spot reveal">
+          <span class="bento-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <h3>Analyze</h3>
+          <p>Explore it, test it, find the story.</p>
+          <ul class="tags"><li>Python</li><li>pandas</li><li>R</li><li>Excel</li></ul>
+        </article>
+        <article class="bento-card spot reveal">
+          <span class="bento-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M5 20V11M10 20V5M15 20v-7M20 20V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <h3>Visualize</h3>
+          <p>Dashboards people actually open.</p>
+          <ul class="tags"><li>Tableau</li><li>Altair</li><li>KPI reporting</li></ul>
+        </article>
+        <article class="bento-card spot reveal">
+          <span class="bento-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M5 12.5 10 17.5 19.5 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <svg class="bento-spark" viewBox="0 0 220 60" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M2 50 L30 42 L58 46 L86 30 L114 34 L142 20 L170 24 L198 10 L218 6"/></svg>
+          <h3>Ship</h3>
+          <p>Work that still runs tomorrow: versioned, tested, validated.</p>
+          <ul class="tags"><li>Git &amp; GitHub</li><li>Streamlit</li><li>Automated tests</li><li>Data validation</li></ul>
+        </article>
       </div>
-      <div class="role">
-        <div class="role-head">
-          <h3>B.S. Information Technology &amp; Management · Syracuse University</h3>
-          <p class="when">School of Information Studies · May 2026</p>
-        </div>
-        <p class="muted">Concentrations in Applied Data Analytics, Information Security and Project Management. Dean's Scholar.</p>
+    </section>
+
+    <!-- ================================================================ phrase band -->
+    <section class="band band-phrase" aria-label="Clean data, clear answers">
+      <div class="band-track" data-marquee data-speed="40" data-reverse aria-hidden="true">
+        <span>Clean data,</span><span class="serif">clear answers</span><i>✦</i>
+        <span>Clean data,</span><span class="serif">clear answers</span><i>✦</i>
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="tags large">
-        <li>SQL (CTEs, window functions)</li><li>Python</li><li>pandas</li><li>R</li><li>Tableau</li><li>Excel</li>
-        <li>Data cleaning &amp; validation</li><li>Dashboards &amp; KPI reporting</li><li>Git &amp; GitHub</li><li>MySQL</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2>Let's talk</h2>
-      <p>I'm looking for entry-level data analyst roles, remote or in the DC, Maryland and Virginia area.</p>
-      <div class="actions">
-        <a class="button primary" href="https://www.linkedin.com/in/david-babafemi" target="_blank" rel="noopener">Message me on LinkedIn</a>
-        <a class="button" href="https://github.com/mojoboy" target="_blank" rel="noopener">GitHub</a>
+    <!-- ================================================================ contact -->
+    <section class="contact" id="contact">
+      <p class="kicker reveal"><span>(04)</span>Contact</p>
+      <h2 class="contact-title reveal" style="--d:80ms">Let's <em>talk</em>.</h2>
+      <p class="reveal" style="--d:160ms">I'm looking for entry-level data analyst roles, remote or in DC, Maryland and Virginia. LinkedIn is the fastest way to reach me.</p>
+      <div class="actions actions-center reveal" style="--d:240ms">
+        <a class="pill pill-primary pill-xl magnetic" href="https://www.linkedin.com/in/david-babafemi" target="_blank" rel="noopener" aria-label="Message me on LinkedIn (opens in a new tab)">
+          <span class="roll"><span data-text="Message me on LinkedIn">Message me on LinkedIn</span></span>
+          <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="pill pill-xl" href="https://github.com/mojoboy" target="_blank" rel="noopener" aria-label="GitHub (opens in a new tab)">
+          <span class="roll"><span data-text="GitHub">GitHub</span></span>
+          <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </section>
   </main>
 
-  <footer>© 2026 Mojolaoluwa Babafemi</footer>
+  <footer class="footer">
+    <div class="footer-row">
+      <span>© <span data-year>2026</span> Mojolaoluwa Babafemi</span>
+      <span>Maryland · <time data-clock>Eastern time</time></span>
+      <span>Built from scratch: HTML, CSS and a little JavaScript</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+    <div class="footer-word" aria-hidden="true">Babafemi</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
