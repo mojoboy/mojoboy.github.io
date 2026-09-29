@@ -287,6 +287,7 @@ a:hover .roll > span, a:focus-visible .roll > span { transform: translateY(-100%
   box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(0, 0, 0, 0.4); transform: translate3d(0, var(--parallax, 0px), 0);
   pointer-events: none;
 }
+.project-float-left { right: auto; left: -7%; }   /* for a project whose screenshots sit on the right */
 .project-index { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
 .project-index span { color: var(--violet-hi); }
 .project-copy h3 { margin: 0 0 16px; font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 600; line-height: 1.05; letter-spacing: -0.04em; }
@@ -435,6 +436,7 @@ a:hover .roll > span, a:focus-visible .roll > span { transform: translateY(-100%
   .project, .project-flip { grid-template-columns: 1fr; }
   .project-flip .project-media { order: 2; }
   .project-float { width: 46%; right: -3%; bottom: -12%; }
+  .project-float-left { left: -3%; }
   .stats { grid-template-columns: repeat(2, 1fr); row-gap: 8px; }
   .timeline::before, .timeline::after, .tl-item::before { left: 6px; }
   .tl-item { grid-template-columns: 1fr; padding-left: 36px; row-gap: 6px; }

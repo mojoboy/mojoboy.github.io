@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>David Babafemi · Data Analyst</title>
-  <meta name="description" content="Mojolaoluwa (David) Babafemi, data analyst. SQL, Python and Tableau work, including a live job-search analytics app and a MySQL analysis of 383,659 tech layoffs. Syracuse University, 2026.">
+  <meta name="description" content="Mojolaoluwa (David) Babafemi, data analyst. SQL, Python and Tableau work, including fitcode, an outfit site built on NOAA weather and Google Trends data, a live job-search analytics app, and a MySQL analysis of 383,659 tech layoffs. Syracuse University, 2026.">
   <meta name="theme-color" content="#0B0B10">
   <link rel="canonical" href="https://mojoboy.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mojoboy.github.io/">
   <meta property="og:title" content="David Babafemi · Data Analyst">
-  <meta property="og:description" content="I turn messy data into clear decisions. SQL, Python and Tableau projects, including a live job-search analytics app.">
+  <meta property="og:description" content="I turn messy data into clear decisions. SQL, Python and Tableau projects, including fitcode, an outfit site built on real weather and search data, and a live job-search analytics app.">
   <meta property="og:image" content="https://mojoboy.github.io/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -65,11 +65,13 @@
       <span>SQL · Python · Tableau</span><span class="star">✦</span>
       <span>Syracuse University, Class of 2026</span><span class="star">✦</span>
       <span>Live demo: Job Search Tracker</span><span class="star">✦</span>
+      <span>New: fitcode, outfits built on real data</span><span class="star">✦</span>
       <span>Open to entry-level data analyst roles</span><span class="star">✦</span>
       <span>Remote or DC · MD · VA</span><span class="star">✦</span>
       <span>SQL · Python · Tableau</span><span class="star">✦</span>
       <span>Syracuse University, Class of 2026</span><span class="star">✦</span>
       <span>Live demo: Job Search Tracker</span><span class="star">✦</span>
+      <span>New: fitcode, outfits built on real data</span><span class="star">✦</span>
     </div>
   </div>
 
@@ -149,7 +151,7 @@
     </section>
 
     <!-- ================================================================ tools band -->
-    <section class="band" aria-label="Tools I use: SQL, Python, Tableau, pandas, MySQL, Streamlit, Excel and R">
+    <section class="band" aria-label="Tools I use: SQL, Python, Tableau, pandas, MySQL, Streamlit, JavaScript, DuckDB, Excel and R">
       <div class="band-track" data-marquee data-speed="55" aria-hidden="true">
         <span>SQL</span><i>✦</i>
         <span class="outline">Python</span><i>✦</i>
@@ -157,6 +159,8 @@
         <span>pandas</span><i>✦</i>
         <span class="outline">MySQL</span><i>✦</i>
         <span class="serif">Streamlit</span><i>✦</i>
+        <span>JavaScript</span><i>✦</i>
+        <span class="outline">DuckDB</span><i>✦</i>
         <span>Excel</span><i>✦</i>
         <span class="outline">R</span><i>✦</i>
       </div>
@@ -169,6 +173,39 @@
         <h2 class="section-title reveal" style="--d:80ms">Things I've <em>built</em>.</h2>
       </header>
 
+      <article class="project project-flip">
+        <div class="project-copy">
+          <p class="project-index reveal"><span>01</span>Website · Data pipeline · JavaScript</p>
+          <h3 class="reveal" style="--d:60ms">fitcode</h3>
+          <p class="project-pitch reveal" style="--d:120ms">Swipe a few pieces, answer eight quick questions, and fitcode builds you an outfit head to toe. Every pick shows the data behind it: your taste, your state's weather this month, and what people near you are searching for.</p>
+          <ul class="points reveal" style="--d:180ms">
+            <li>Python pipeline cleans NOAA climate files and Google Trends exports into DuckDB, checks them, and ships small JSON files to the site</li>
+            <li>A scoring model you can read: five weighted signals, hard no's removed first, and missing data left out instead of counted as zero</li>
+            <li>Plain JavaScript on GitHub Pages: a 3D wardrobe, music generated in the browser, and more than 50 automated tests</li>
+          </ul>
+          <ul class="tags reveal" style="--d:220ms"><li>JavaScript</li><li>Python</li><li>pandas</li><li>DuckDB</li><li>NOAA data</li><li>Google Trends</li></ul>
+          <div class="actions reveal" style="--d:260ms">
+            <a class="pill pill-primary magnetic" href="https://mojoboy.github.io/fitcode/" target="_blank" rel="noopener" aria-label="Visit the live site (opens in a new tab)">
+              <span class="roll"><span data-text="Visit the live site">Visit the live site</span></span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="pill" href="https://github.com/mojoboy/fitcode" target="_blank" rel="noopener" aria-label="Code on GitHub (opens in a new tab)">
+              <span class="roll"><span data-text="Code">Code</span></span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <p class="fineprint reveal" style="--d:300ms">The closet is free stock photos with generic names, not a store.</p>
+        </div>
+
+        <div class="project-media reveal" data-tilt>
+          <a class="browser" href="https://mojoboy.github.io/fitcode/" target="_blank" rel="noopener" data-cursor="Open the site ↗" aria-label="Open fitcode (opens in a new tab)">
+            <span class="browser-bar"><i></i><i></i><i></i><span>mojoboy.github.io/fitcode</span></span>
+            <img src="assets/fitcode-wardrobe.webp" width="1600" height="1000" alt="fitcode's home page: 28 clothing photos floating on a slowly turning 3D ball, above the line 'Your closet, read like data.'">
+          </a>
+          <img class="project-float project-float-left" data-parallax="0.12" src="assets/fitcode-tryon.webp" width="1600" height="1000" loading="lazy" alt="">
+        </div>
+      </article>
+
       <article class="project">
         <div class="project-media reveal" data-tilt>
           <a class="browser" href="https://mojoboy-job-tracker.streamlit.app" target="_blank" rel="noopener" data-cursor="Open the demo ↗" aria-label="Open the Job Search Tracker live demo (opens in a new tab)">
@@ -178,7 +215,7 @@
           <img class="project-float" data-parallax="0.12" src="assets/tracker-pipeline.webp" width="1600" height="1026" loading="lazy" alt="">
         </div>
         <div class="project-copy">
-          <p class="project-index reveal"><span>01</span>Web app · Python · MySQL</p>
+          <p class="project-index reveal"><span>02</span>Web app · Python · MySQL</p>
           <h3 class="reveal" style="--d:60ms">Job Search Tracker</h3>
           <p class="project-pitch reveal" style="--d:120ms">Paste a job link and the company, role, pay and description fill themselves in. Track every reply on a board, and the dashboard shows which resumes and channels actually get responses. Built for anyone's search, in any field.</p>
           <ul class="points reveal" style="--d:180ms">
@@ -203,7 +240,7 @@
 
       <article class="project project-flip">
         <div class="project-copy">
-          <p class="project-index reveal"><span>02</span>SQL analysis · MySQL</p>
+          <p class="project-index reveal"><span>03</span>SQL analysis · MySQL</p>
           <h3 class="reveal" style="--d:60ms">Tech Layoffs, <span class="nowrap">2020–2023</span></h3>
           <p class="project-pitch reveal" style="--d:120ms">I cleaned 2,361 raw layoff records in MySQL, then asked who was hit, when, and how hard. 2022 was the peak, and 2023 reached 78% of 2022's total by early March.</p>
           <ul class="points reveal" style="--d:180ms">
@@ -314,7 +351,7 @@
           <pre class="bento-deco" aria-hidden="true">SUM(total_laid_off) OVER (ORDER BY month)</pre>
           <h3>Query</h3>
           <p>Clean, join and reshape data where it lives.</p>
-          <ul class="tags"><li>SQL</li><li>MySQL</li><li>CTEs</li><li>Window functions</li></ul>
+          <ul class="tags"><li>SQL</li><li>MySQL</li><li>DuckDB</li><li>CTEs</li><li>Window functions</li></ul>
         </article>
         <article class="bento-card spot reveal">
           <span class="bento-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
@@ -333,7 +370,7 @@
           <svg class="bento-spark" viewBox="0 0 220 60" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M2 50 L30 42 L58 46 L86 30 L114 34 L142 20 L170 24 L198 10 L218 6"/></svg>
           <h3>Ship</h3>
           <p>Work that still runs tomorrow: versioned, tested, validated.</p>
-          <ul class="tags"><li>Git &amp; GitHub</li><li>Streamlit</li><li>Automated tests</li><li>Data validation</li></ul>
+          <ul class="tags"><li>Git &amp; GitHub</li><li>Streamlit</li><li>JavaScript</li><li>Automated tests</li><li>Data validation</li></ul>
         </article>
       </div>
     </section>
